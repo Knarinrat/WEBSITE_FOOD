@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(237, 213, 172);
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+    max-width: 30px;
+    height: auto;
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.con1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.head {
+    text-align: center;
+}
+
+.head .con1 {
+    font-size: 20px;
+}
+
+.head .con1 .image {
+    max-width: 300px;
+    height: auto;
+}
+
+.user-profile {
+    font-size: 20px;
+}
+
+.image {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    /* ขยายรูปภาพเล็กน้อยเมื่อเลื่อนเมาส์ */
+    /* ขยายขนาดรูปภาพเล็กน้อยเป็น 105% ของขนาดเดิมเมื่อเลื่อนเมาส์ไปที่มัน ทำให้ดูเหมือนว่ารูปภาพ "ลอย" ขึ้นมา */
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    /* กำหนดความกว้างสูงสุด */
+    width: 100%;
+    /* ให้ความกว้างยืดได้เต็มคอนเทนเนอร์ */
+    margin: 10px auto;
+    /* จัดให้อยู่ตรงกลาง */
+    border: 0;
+    /* ไม่มีเส้นขอบมาตรฐาน */
+    border-top: 2px solid #ffffff;
+    /* สีและความหนาของเส้น */
+    opacity: 0.6;
+    /* ความโปร่งแสง */
+    padding: 0 10px;
+    /* เพิ่ม padding ซ้ายและขวาสำหรับหน้าจอเล็ก */
+    box-sizing: border-box;
+    /* ให้ padding ไม่ไปเพิ่มขนาดความกว้าง */
+}
+
+.order {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #d0ab86;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.order:hover {
+    background-color: #f50404;
+    /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+    color: white;
+    /* สีตัวอักษรเมื่อเอาเมาส์ไปวาง */
+}
+
+#logoutButton {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #d0ab86;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#logoutButton:hover {
+    background-color: #f50404;
+    /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+    color: white;
+    /* สีตัวอักษรเมื่อเอาเมาส์ไปวาง */
+}

@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(237, 213, 172);
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+
+.text-sweet {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.topping-options {
+    display: flex;
+    /* ใช้ Flexbox เพื่อจัดเรียงคอลัมน์ */
+    justify-content: center;
+    /* จัดตำแหน่งให้อยู่กลาง */
+    gap: 2px;
+    /* ลดระยะห่างระหว่างคอลัมน์ */
+}
+
+.topping-options>div {
+    flex: 1;
+    /* ให้แต่ละคอลัมน์มีขนาดเท่ากัน */
+    margin: 0;
+    /* ลบ margin เพื่อให้ติดกัน */
+}
+
+.option {
+    margin: 5px 0;
+    /* ลดระยะห่างระหว่างตัวเลือก */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    /* ระยะห่างระหว่าง radio buttons */
+}
+
+.separator {
+    margin: 20px auto;
+    /* ระยะห่างด้านบนและด้านล่าง */
+    height: 1px;
+    width: 80%;
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    background-color: #ffffff;
+    /* สีของเส้นคั่น */
+}
+
+.button-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+.button.green {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.green:hover {
+    background-color: #45a049;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+.button.red {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.red:hover {
+    background-color: #e53935;
+    /* สีของปุ่ม "ตกลง" เมื่อชี้ */
+}

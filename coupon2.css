@@ -1,0 +1,121 @@
+body {
+    background-color: #edd5ac;
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+
+.center-text {
+    text-indent: 30px;
+    text-align: left;
+    margin: 20px 70px;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    color: #3b2720;
+}
+
+.coupons-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับการจัดเรียง */
+    justify-content: space-between;
+    /* จัดให้มีช่องว่างระหว่างคูปอง */
+    margin-bottom: 20px;
+    /* ช่องว่างด้านล่างของแถวคูปอง */
+}
+
+.coupon {
+    flex: 1;
+    /* ทำให้คูปองเติบโตให้เต็มพื้นที่ */
+    margin: 0 5px;
+    /* ให้มีระยะห่างเล็กน้อยระหว่างคูปอง */
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    align-items: center;
+    /* จัดกลางในแนวตั้ง */
+}
+
+.coupon img {
+    width: 100%;
+    /* ขนาดสำหรับรูปภาพ 1-4 */
+    height: auto;
+    /* รักษาสัดส่วน */
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}

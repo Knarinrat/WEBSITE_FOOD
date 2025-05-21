@@ -1,0 +1,365 @@
+body {
+    background-color: #edd5ac;
+    display: flex;
+    /* ใช้ Flexbox สำหรับ body */
+    flex-direction: column;
+    /* จัดเรียงองค์ประกอบในแนวตั้ง */
+
+}
+
+.body2 {
+    text-align: center;
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* ทำให้แถบเมนูเต็มความกว้าง */
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.search-form {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดเรียง */
+    gap: 10px;
+    /* ช่องว่างระหว่างช่องค้นหาและปุ่ม */
+    align-items: center;
+    /* จัดแนวในแนวตั้ง */
+    justify-content: center;
+    /* จัดกลางในแนวนอน */
+}
+
+input[type=text] {
+    font-family: 'Pattaya', sans-serif;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #d0ab86;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+    outline: none;
+    /* ลบขอบตอนโฟกัส */
+    border-color: #d0ab86;
+    /* กำหนดสีขอบใหม่ */
+}
+
+select {
+    font-family: 'Pattaya', sans-serif;
+    width: 130px;
+    /* ความกว้างของ select */
+    box-sizing: border-box;
+    border: 2px solid #d0ab86;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px;
+    /* เพิ่มการpadding */
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+.name-text {
+    font-size: 25px;
+    color: #3b2720;
+}
+
+.price-text {
+    font-size: 20px;
+    color: #3b2720;
+}
+
+.menu-container {
+    font-family: 'Pattaya', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* จัดเมนูในแถวสุดท้ายให้อยู่ตรงกลาง */
+    gap: 20px;
+    max-width: 100%;
+}
+
+.menu-item {
+    background-color: #d0ab86;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    flex-basis: calc(25% - 20px);
+    /* กำหนดความกว้างของเมนูให้เป็น 25% ของพื้นที่คอนเทนเนอร์ลบช่องว่าง 20px */
+    margin-bottom: 20px;
+    /* ช่องว่างด้านล่างเมนู */
+}
+
+
+.menu-image {
+    width: 100%;
+    /* ให้รูปภาพเต็มความกว้างของเมนู */
+    height: auto;
+    /* คงสัดส่วนของรูปภาพ */
+}
+
+.menu-info {
+    padding: 15px;
+    /* ช่องว่างรอบ ๆ ข้อความ */
+}
+
+.menu-info h3 {
+    margin: 0;
+    /* ลบระยะห่างด้านบนและล่าง */
+}
+
+.menu-info p {
+    margin: 5px 0 0;
+    /* เพิ่มระยะห่างระหว่างราคา */
+}
+
+/* Default style สำหรับหน้าจอขนาดใหญ่ (เช่น คอมพิวเตอร์) จะยังเหมือนเดิม */
+
+/* ปรับสไตล์สำหรับหน้าจอขนาดเล็ก เช่น โทรศัพท์ */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        /* เปลี่ยนจากการจัดเรียงในแถว (row) เป็นคอลัมน์ */
+        align-items: center;
+        /* จัดให้อยู่กลางในแนวตั้ง */
+    }
+
+    .menu-item {
+        width: 100%;
+        /* ทำให้เมนูเต็มความกว้างของหน้าจอ */
+        max-width: 400px;
+        /* กำหนดขนาดสูงสุด เพื่อให้ไม่ใหญ่เกินไป */
+    }
+
+    .search-form {
+        flex-direction: column;
+        /* จัดให้ช่องค้นหาและ select ซ้อนกันในแนวตั้ง */
+        width: 100%;
+        /* ให้ form มีขนาดเต็มความกว้าง */
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        /* ปรับให้ input และ select กว้างเต็มหน้าจอ */
+    }
+}
+
+.button-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "รายการอาหาร" */
+.button.yellow {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.yellow:hover:hover {
+    background-color: #c0c243;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ยืนยัน" */
+.button.green {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.green:hover:hover {
+    background-color: #45a049;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+.button.red {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.red:hover {
+    background-color: #e53935;
+    /* สีของปุ่ม "ตกลง" เมื่อชี้ */
+}
+
+
+.button-container2 {
+    display: flex;
+    justify-content: flex-end;
+    /* จัดชิดขวา */
+    padding: 10px;
+    /* ระยะห่างด้านใน */
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* ระยะห่างจากปุ่มอื่น (ถ้ามี) */
+}
+
+.add-button {
+    font-family: 'Pattaya', sans-serif;
+    background-color: #ffe9c9;
+    /* สีพื้นหลัง */
+    color: #3b2720;
+    /* สีตัวอักษร */
+    padding: 2px 11px;
+    /* ระยะขอบด้านในของปุ่ม */
+    font-size: 20px;
+    /* ขนาดของฟอนต์ */
+    border: none;
+    /* ไม่มีเส้นขอบ */
+    border-radius: 100px;
+    /* มุมโค้ง */
+    cursor: pointer;
+    /* แสดงเคอร์เซอร์ */
+    transition: background-color 0.3s ease;
+    /* เพิ่มแอนิเมชันเวลาเปลี่ยนสี */
+    float: right;
+    /* จัดตำแหน่งให้ชิดขวา */
+    margin-right: 10px;
+    /* ระยะห่างจากขอบด้านขวา */
+}
+
+.add-button:hover {
+    background-color: #6aa76d;
+    /* เปลี่ยนสีเมื่อเลื่อนเมาส์ไปบนปุ่ม */
+}
+
+.add-button:active {
+    background-color: #3e8e41;
+    /* เปลี่ยนสีเมื่อคลิก */
+}
+
+.scroll-button {
+    font-family: 'Pattaya', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    /* ระยะห่างจากด้านล่าง */
+    right: 20px;
+    /* ระยะห่างจากด้านขวา */
+    padding: 10px 15px;
+    background-color: #d4a575;
+    /* สีพื้นหลัง */
+    color: white;
+    /* สีตัวอักษร */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    /* ซ่อนปุ่มในเริ่มต้น */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* ทำให้การเลื่อนไปยังแฮชเป็นแบบสมูท */
+}

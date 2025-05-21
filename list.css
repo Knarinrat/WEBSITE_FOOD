@@ -1,0 +1,322 @@
+body {
+    font-family: 'Pattaya', sans-serif;
+    background-color: #eed2ac;
+    color: #3b2720;
+    margin: 0;
+    padding: 0;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.small {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#summary-title {
+    max-width: 600px;
+    /* ให้กว้างเท่ากับ #cart-items */
+    margin: 20px auto;
+    padding-left: 10px;
+    /* ระยะจากซ้ายพอๆ กับ item-name */
+    font-size: 20px;
+}
+
+#cart-items {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    /* เส้นบรรทัดสีขาว */
+}
+
+.item-name {
+    text-align: left;
+    flex: 1;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.item-options {
+    font-size: 0.9em;
+    color: #ccc;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.remove-button {
+    background-color: red;
+    /* สีพื้นหลัง */
+    color: white;
+    /* สีข้อความ */
+    border: none;
+    /* ไม่มีกรอบ */
+    border-radius: 50%;
+    /* ทำให้เป็นวงกลม */
+    width: 20px;
+    /* ความกว้าง */
+    height: 20px;
+    /* ความสูง */
+    cursor: pointer;
+    /* แสดงลูกศร */
+    display: flex;
+    /* ใช้ flexbox */
+    align-items: center;
+    /* จัดให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้อยู่กลางแนวนอน */
+    margin-right: 15px;
+    /* ระยะห่างจากชื่อเมนู */
+}
+
+.button-container2 {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+#coupon {
+    font-family: 'Pattaya', sans-serif;
+    border-radius: 5px;
+}
+
+.button2 {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    padding: 10px 100px;
+    /* เพิ่ม padding ข้างซ้ายและขวา */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.button-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+.button3 {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 12px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+.button3.coupon {
+    background-color: #d0ab86;
+}
+
+.button3.coupon:hover:hover {
+    background-color: #45a049;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ยืนยัน" */
+.button.green {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.green:hover:hover {
+    background-color: #45a049;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+#buttonred {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #d0ab86;
+    font-family: 'Pattaya', sans-serif;
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+#buttonred:hover {
+    background-color: #f50404;
+    /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+    color: white;
+    /* สีตัวอักษรเมื่อเอาเมาส์ไปวาง */
+}
+
+#coupon-container {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    text-align: center;
+}
+
+
+#total-price {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #95491d
+}
+
+#qr-code {
+    display: block;
+    /* เพื่อให้ margin auto ทำงาน */
+    width: 50%;
+    /* ปรับขนาดตามต้องการ */
+    height: 50%;
+    margin: 0 auto;
+    /* จัดกึ่งกลาง */
+    object-fit: cover;
+}
+
+/* สำหรับจัดให้อยู่ตรงกลางเว็บ */
+.container {
+    display: flex;
+    justify-content: center;
+    /* จัดกึ่งกลางในแนวนอน */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#payment-details {
+    max-width: 600px;
+    /* กำหนดความกว้างสูงสุด */
+    text-align: left;
+    /* ชิดซ้าย */
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    /* กำหนดความกว้างสูงสุด */
+    width: 100%;
+    /* ให้ความกว้างยืดได้เต็มคอนเทนเนอร์ */
+    margin: 10px auto;
+    /* จัดให้อยู่ตรงกลาง */
+    border: 0;
+    /* ไม่มีเส้นขอบมาตรฐาน */
+    border-top: 2px solid #ffffff;
+    /* สีและความหนาของเส้น */
+    opacity: 0.6;
+    /* ความโปร่งแสง */
+    padding: 0 10px;
+    /* เพิ่ม padding ซ้ายและขวาสำหรับหน้าจอเล็ก */
+    box-sizing: border-box;
+    /* ให้ padding ไม่ไปเพิ่มขนาดความกว้าง */
+}
+
+.total {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.success {
+    color: green;
+    margin-top: 1rem;
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+}

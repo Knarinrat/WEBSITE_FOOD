@@ -1,0 +1,206 @@
+body {
+    background-color: #edd5ac;
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.con1 {
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+}
+
+.top .menu-link .link {
+    color: #000;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+
+.center-text {
+    text-indent: 30px;
+    text-align: left;
+    margin: 20px 70px;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    color: #3b2720;
+}
+
+.coupons-container {
+    display: flex;
+    justify-content: center;
+    /* จัดกลางรายการในแนวนอน */
+    gap: 20px;
+    /* ช่องว่างระหว่างคูปอง */
+    margin-bottom: 20px;
+    /* ช่องว่างด้านล่างของแถวคูปอง */
+}
+
+.coupon {
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    align-items: center;
+    /* จัดกลางในแนวตั้ง */
+}
+
+.coupon-size-1 {
+    width: 100%;
+    /* ขนาดสำหรับรูปภาพ 1-4 */
+    height: auto;
+}
+
+.coupon-size-2 {
+    width: 100%;
+    /* ขนาดสำหรับรูปภาพ 5-8 */
+    height: auto;
+}
+
+.coupon button {
+    /* width: 100%;
+    height: auto;*/
+    margin-top: 10px;
+    /* ช่องว่างด้านบนของปุ่ม */
+}
+
+/* Media Queries สำหรับอุปกรณ์ที่มีหน้าจอเล็ก */
+@media (max-width: 600px) {
+    .coupon-size-1 {
+        width: 100px;
+        /* ขนาดสำหรับโทรศัพท์มือถือ */
+    }
+
+    .coupon-size-2 {
+        width: 80px;
+        /* ขนาดสำหรับโทรศัพท์มือถือ */
+    }
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    background-color: #d0ab86;
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+.button-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+.button.red {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.red:hover {
+    background-color: #e53935;
+    /* สีของปุ่ม "ตกลง" เมื่อชี้ */
+}

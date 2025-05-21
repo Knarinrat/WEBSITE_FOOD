@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(237, 213, 172);
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+
+.con1 {
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+
+.center-text {
+    text-indent: 30px;
+    /* เยื้องบรรทัดแรก (สามารถปรับได้ตามต้องการ) */
+    text-align: left;
+    /* ข้อความชิดซ้าย */
+    margin-left: 70px;
+    /* เยื้องจากซ้าย */
+    margin-right: 70px;
+    /* เยื้องจากขวา */
+    margin-top: 20px;
+    /* ช่องว่างด้านบน (สามารถปรับได้ตามต้องการ) */
+    font-family: 'Pattaya', sans-serif;
+    /* ใช้ฟอนต์เดียวกันกับข้อความอื่น ๆ */
+    font-size: 20px;
+    /* ขนาดฟอนต์ */
+    color: #3b2720;
+    /* สีข้อความ */
+}
+
+.center-text p {
+    line-height: 1.6;
+    /* กำหนดความสูงของบรรทัด (1.6 เท่าของขนาดฟอนต์) */
+}
+
+.contact-text {
+    text-align: center;
+    /* ข้อความชิดซ้าย */
+    margin-left: 70px;
+    /* เยื้องจากซ้าย */
+    margin-right: 70px;
+    /* เยื้องจากขวา */
+    margin-top: 20px;
+    /* ช่องว่างด้านบน (สามารถปรับได้ตามต้องการ) */
+    font-family: 'Pattaya', sans-serif;
+    /* ใช้ฟอนต์เดียวกันกับข้อความอื่น ๆ */
+    font-size: 20px;
+    /* ขนาดฟอนต์ */
+    color: #3b2720;
+    /* สีข้อความ */
+}
+
+.contact-text p {
+    line-height: 1.6;
+    /* กำหนดความสูงของบรรทัด (1.6 เท่าของขนาดฟอนต์) */
+}

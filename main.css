@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+}
+
+.thai.marquee {
+    font-size: 20px;
+    color: white;
+}
+
+#form {
+    width: 500px;
+    border-radius: 10px;
+    margin: 25vh auto 0 auto;
+    padding: 5px;
+    background-color: #fad89d;
+}
+
+#form h1 {
+    color: black;
+    text-align: center;
+}
+
+.input-control input {
+    width: 100%;
+    margin: 2px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+.input-control input[type="password"] {
+    color: black;
+    /* สีตัวอักษร (จะแสดงเป็นตุ่ม) */
+    text-indent: 1px;
+    /* ย่อหน้าตัวอักษร */
+    letter-spacing: 1px;
+    /* การเว้นระยะระหว่างตุ่ม */
+}
+
+.input-control input[type="password"]::placeholder {
+    color: gray;
+    /* สีของ placeholder */
+}
+
+.input-control.success input {
+    border-color: #0f0;
+}
+
+.input-control.error {
+    color: #f00;
+    font-size: 15px;
+}
+
+.input-control.error input {
+    border-color: #f00;
+}
+
+.button-input {
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+}
+
+.button-password {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.button-password:hover {
+    background-color: #d0ab86;
+    color: white;
+}
+
+.button-submit {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #d0ab86;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.button-submit:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button-index {
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.button-index:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button-cancle {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.button-cancle:hover {
+    background-color: #f50404;
+    /* Green */
+    color: white;
+}

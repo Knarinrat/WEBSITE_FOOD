@@ -1,0 +1,243 @@
+body {
+    background-color: rgb(237, 213, 172);
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    color: #3b2720;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+
+.top .menu-link .link:hover {
+    background-color: #faca82;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    text-align: center;
+    color: #3b2720;
+}
+
+.con1,
+.logo {
+    text-align: center;
+}
+
+.logo2 {
+    max-width: 200px;
+    height: auto;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+#reviewText,
+#submitReview {
+    font-size: 15px;
+    font-family: 'Pattaya', sans-serif;
+    cursor: pointer;
+    color: #3b2720;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+#submitReview:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดตำแหน่งปุ่ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+.button {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    color: white;
+    /* สีของข้อความในปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ยืนยัน" */
+.button.green {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.green:hover:hover {
+    background-color: #45a049;
+    /* สีของปุ่มเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+.button.red {
+    background-color: #d0ab86;
+    /* สีพื้นหลังของปุ่ม "ตกลง" */
+}
+
+.button.red:hover {
+    background-color: #e53935;
+    /* สีของปุ่ม "ตกลง" เมื่อชี้ */
+}
+
+/*shippingggg*/
+.divider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    /* กำหนดความกว้างสูงสุด */
+    width: 100%;
+    /* ให้ความกว้างยืดได้เต็มคอนเทนเนอร์ */
+    margin: 10px auto;
+    /* จัดให้อยู่ตรงกลาง */
+    border: 0;
+    /* ไม่มีเส้นขอบมาตรฐาน */
+    border-top: 2px solid #ffffff;
+    /* สีและความหนาของเส้น */
+    opacity: 0.6;
+    /* ความโปร่งแสง */
+    padding: 0 10px;
+    /* เพิ่ม padding ซ้ายและขวาสำหรับหน้าจอเล็ก */
+    box-sizing: border-box;
+    /* ให้ padding ไม่ไปเพิ่มขนาดความกว้าง */
+}
+
+.user-profile {
+    font-size: 20px;
+}
+
+#userData {
+    font-size: 15px;
+}
+
+/* เปลี่ยนสีเมื่อชี้ปุ่ม "ตกลง" */
+#buttonred {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #d0ab86;
+    font-family: 'Pattaya', sans-serif;
+    padding: 10px 20px;
+    /* ขนาดของปุ่ม */
+    border: none;
+    /* ไม่ใช้เส้นขอบ */
+    border-radius: 5px;
+    /* มุมปุ่มโค้ง */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    font-size: 16px;
+    /* ขนาดข้อความในปุ่ม */
+}
+
+#buttonred:hover {
+    background-color: #f50404;
+    /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+    color: white;
+    /* สีตัวอักษรเมื่อเอาเมาส์ไปวาง */
+}

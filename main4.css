@@ -1,0 +1,282 @@
+body {
+    background-color: rgb(237, 213, 172);
+}
+
+.thai {
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#accountInfo {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+
+}
+
+#userName {
+    text-decoration: none;
+    /* ไม่ให้มีเส้นใต้ */
+    color: inherit;
+    /* ใช้สีของข้อความปกติ */
+    font-family: 'Pattaya', sans-serif;
+    color: #3b2720;
+}
+
+#userName:hover {
+    color: blue;
+    /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+.profile {
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px
+}
+
+.footer {
+    color: #3b2720;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.top .menu-link {
+    display: flex;
+    gap: 30px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.top .menu-link .link {
+    color: #3b2720;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.top .menu-link .link:hover {
+    background-color: #d0ab86;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.thai .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thai .head .logo2 {
+    max-width: 30%;
+    height: auto;
+    padding-left: 10%;
+
+}
+
+.con1 {
+    text-align: center;
+}
+
+.thai .head .content .con1 {
+    font-size: 30px;
+}
+
+.thai .head .content {
+    background-color: rgba(255, 254, 254, 0.2);
+    font-size: 20px;
+    padding-left: 50px;
+    border-style: double;
+}
+
+.menu-item .item {
+    font-size: 30px;
+}
+
+/* ตั้งค่ากรอบรีวิว */
+.review {
+    border-style: double;
+    /* กำหนดเส้นขอบ */
+    padding: 10px;
+    /* เพิ่มระยะห่างภายในกรอบ */
+    margin-right: 10px;
+    /* เพิ่มช่องว่างระหว่างรีวิว */
+    width: 200px;
+    /* ความกว้างของรีวิวแต่ละอัน */
+    border-radius: 5px;
+    /* ทำมุมกรอบให้โค้งมน */
+    text-align: center;
+    /* จัดข้อความกลาง */
+}
+
+/* ตั้งค่าคอนเทนเนอร์ของรีวิวให้สามารถเลื่อนได้ */
+#reviews-food {
+    font-size: 20px;
+    display: flex;
+    overflow-x: auto;
+    /* ให้สามารถเลื่อนได้แนวนอน */
+    padding: 10px;
+    /* ระยะห่างภายในคอนเทนเนอร์ */
+}
+
+#reviews-food::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* สีของ scrollbar */
+    border-radius: 10px;
+    /* ทำ scrollbar ให้โค้งมน */
+}
+
+#reviews-food::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* สีพื้นหลังของ scrollbar */
+}
+
+.middle {
+    background-color: rgba(250, 164, 35, 0.2);
+}
+
+.middle .con1 {
+    font-size: 20px;
+}
+
+.food ul {
+    gap: 10px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+    /* ทำให้สามารถเลื่อนได้ในแนวนอน */
+    scroll-behavior: smooth;
+    /* ทำให้เลื่อนนุ่มนวล */
+}
+
+.food .food2 {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* กำหนดให้การเปลี่ยนแปลงของ transform และ background-color มีการเคลื่อนไหวที่นุ่มนวล โดยใช้ระยะเวลา 0.3 วินาที และใช้ฟังก์ชัน ease เพื่อทำให้การเคลื่อนไหวดูเป็นธรรมชาติ */
+}
+
+.food2:hover {
+    transform: scale(1.05);
+    /* ขยายรูปภาพเล็กน้อยเมื่อเลื่อนเมาส์ */
+    /* ขยายขนาดรูปภาพเล็กน้อยเป็น 105% ของขนาดเดิมเมื่อเลื่อนเมาส์ไปที่มัน ทำให้ดูเหมือนว่ารูปภาพ "ลอย" ขึ้นมา */
+}
+
+.bottom .con1 {
+    font-size: 30px;
+}
+
+.menu2-link ul {
+    gap: 20px;
+    display: flex;
+    /* จัดเรียงรูปภาพในแนวนอน */
+    list-style-type: none;
+    /* เหมือนลบจุดหน้า list  */
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+    /* ทำให้สามารถเลื่อนได้ในแนวนอน */
+    scroll-behavior: smooth;
+    /* ทำให้เลื่อนนุ่มนวล */
+}
+
+.food-link {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 70%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* กำหนดให้การเปลี่ยนแปลงของ transform และ background-color มีการเคลื่อนไหวที่นุ่มนวล โดยใช้ระยะเวลา 0.3 วินาที และใช้ฟังก์ชัน ease เพื่อทำให้การเคลื่อนไหวดูเป็นธรรมชาติ */
+}
+
+.food-link:hover {
+    transform: scale(1.05);
+    /* ขยายรูปภาพเล็กน้อยเมื่อเลื่อนเมาส์ */
+    /* ขยายขนาดรูปภาพเล็กน้อยเป็น 105% ของขนาดเดิมเมื่อเลื่อนเมาส์ไปที่มัน ทำให้ดูเหมือนว่ารูปภาพ "ลอย" ขึ้นมา */
+}
+
+.food2-link {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10%;
+}
+
+#section1 {
+    background-color: rgba(250, 164, 35, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+#section2 {
+    background-color: rgba(255, 254, 254, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+#section3 {
+    background-color: rgba(250, 164, 35, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+#section4 {
+    background-color: rgba(255, 254, 254, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+#section5 {
+    background-color: rgba(250, 164, 35, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+#section6 {
+    background-color: rgba(255, 254, 254, 0.2);
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+}
+
+.scroll-button {
+    font-family: 'Pattaya', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    /* ระยะห่างจากด้านล่าง */
+    right: 20px;
+    /* ระยะห่างจากด้านขวา */
+    padding: 10px 15px;
+    background-color: #d4a575;
+    /* สีพื้นหลัง */
+    color: white;
+    /* สีตัวอักษร */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    /* ซ่อนปุ่มในเริ่มต้น */
+}
