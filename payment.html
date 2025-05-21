@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการอาหาร</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="accountInfo">
+        <img src="profile2.png" alt="logo" class="profile">
+        <a id="userName" href="profile.html"></a>
+    </div>
+
+    <h1>วิธีการชำระเงิน</h1>
+    <!-- ฟอร์มเลือกการชำระเงิน -->
+    <div class="container"> <!-- คอนเทนเนอร์หลักสำหรับจัดให้อยู่ตรงกลาง -->
+        <form id="payment-form">
+            <label>
+                <input type="radio" name="payment-method" value="cash" onclick="showPaymentOptions()"> ชำระเงินสด
+            </label><br>
+            <label>
+                <input type="radio" name="payment-method" value="bank-app" onclick="showPaymentOptions()">
+                ชำระผ่านแอพธนาคาร
+            </label><br>
+        </form>
+    </div>
+    <div class="container">
+        <!-- ส่วนที่จะแสดงรายละเอียดตามวิธีการชำระเงิน -->
+        <div id="payment-details" style="display: none;">
+            <!-- รายละเอียดการชำระเงินสด -->
+            <div id="cash-details" style="display: none;">
+                <p style="font-size: 20px; color:#95491d">วิธีการชำระเงินสด</p>
+                <p style="font-size: 20px; color:#95491d">กรุณาชำระเงินสดกับผู้จัดส่งเมื่อสินค้าถึงที่</p>
+            </div>
+
+            <!-- รายละเอียดการชำระผ่านแอพธนาคาร -->
+            <div id="bank-app-details" style="display: none;">
+                <p style="font-size: 20px; color:#95491d">วิธีการชำระผ่านแอพธนาคาร</p>
+                <p style="font-size: 20px; color:#95491d">กรุณาสแกน QR Code ด้านล่างเพื่อชำระเงิน</p>
+                <img id="qr-code" src="qr.webp" alt="QR Code สำหรับการชำระเงิน">
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="buttonred" onclick="confirmOrder()">เสร็จสิ้น</button>
+    </div>
+
+    <footer>
+        <p class="footer">Copyright© 2024 khruakhunmae. All rights reserved.</p>
+    </footer>
+
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

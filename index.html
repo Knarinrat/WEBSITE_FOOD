@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>เข้าสู่ระบบสำหรับสมาชิก</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="thai">
+        <div class="marquee">
+            <marquee direction="left">
+                ครัวคุณแม่ อาหารไทยโบราณการันตรีความอร่อยยาวนานกว่า 40 ปี
+            </marquee>
+        </div>
+        <form id="form" autocomplete="off">
+            <h1>เข้าสู่ระบบ</h1>
+            <div class="input-control">
+                <label for="email">อีเมล : </label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="pwsdinput">รหัสผ่าน : </label>
+                <input type="password" id="pwsinput" name="pwsinput">
+                <div class="error"></div>
+            </div>
+            <button type="button" class="button-password" onclick="location.href='resetpassword.html';">
+                ลืมรหัสผ่าน ?
+            </button>
+            <button type=" submit" class="button-submit">เข้าสู่ระบบ</button>
+            <button type="button" class="button-cancle">ยกเลิก</button>
+            <div class="button-input">
+                <a href="index2.html">
+                    <h2> สมัครสมาชิก</h2>
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

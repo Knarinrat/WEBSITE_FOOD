@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>สั่งอาหาร</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="accountInfo">
+        <img src="profile2.png" alt="logo" class="profile">
+        <a id="userName" href="profile.html"></a>
+    </div>
+    <div class="top">
+        <img src="logo2.jpg" alt="logo img" class="logo">
+        <div class="menu-link">
+            <a href="home.html" class="link"> หน้าแรก </a>
+            <a href="menu.html" class="link"> สั่งอาหาร </a>
+            <a href="coupon2.html" class="link"> โปรโมชั่น </a>
+            <a href="contact.html" class="link"> ติดต่อเรา </a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="bannerhome.jpg" alt="banner img">
+    </div>
+    <div class="body2">
+        <form class="search-form">
+            <input type="text" name="search" placeholder="ค้นหา...">
+            <select name="category" onchange="location = this.value;">
+                <option value="">ประเภท</option>
+                <option value="#snack">อาหารทานเล่น</option>
+                <option value="#main-dish">อาหารจานหลัก</option>
+                <option value="#single-dish">อาหารจานเดียว</option>
+                <option value="#side-dish">เครื่องเคียง</option>
+                <option value="#dessert">ของหวาน</option>
+                <option value="#drinks">เครื่องดื่ม</option>
+            </select>
+            <select name="price-range" id="priceRangeSelect">
+                <option value="">ช่วงราคา</option>
+                <option value="1-100" data-url="menu1.html">1-100 บาท</option>
+                <option value="101-200" data-url="menu2.html">101-200 บาท</option>
+                <option value="201-300" data-url="menu3.html">201-300 บาท</option>
+                <option value="301-400" data-url="menu4.html">301-400 บาท</option>
+            </select>
+        </form>
+
+        <h1 id="main-dish">อาหารจานหลัก</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="ฉู่ฉี่กุ้งแม่น้ำ">
+                <img src="menu/disher/7.png" alt="disher7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ฉู่ฉี่กุ้งแม่น้ำ</p>
+                    <p class="price-text">ราคา: 350 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ฉู่ฉี่กุ้งแม่น้ำ',350)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="กุ้งเผา">
+                <img src="menu/disher/13.png" alt="disher13" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">กุ้งเผา</p>
+                    <p class="price-text">ราคา: 380 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('กุ้งเผา',380)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button green" onclick="window.location.href='list.html'">ยืนยัน</button>
+            <button class="button red">ยกเลิก</button>
+        </div>
+
+        <button id="scrollToTopButton" class="scroll-button">ขึ้นไปด้านบน</button>
+    </div>
+
+    <footer>
+        <p class="footer">Copyright© 2024 khruakhunmae. All rights reserved.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการอาหาร</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="accountInfo">
+        <img src="profile2.png" alt="logo" class="profile">
+        <a id="userName" href="profile.html"></a>
+    </div>
+
+    <p>รายการอาหาร</p>
+    <div id="summary-title">สรุปรายการอาหาร</div>
+    <div id="cart-items"></div>
+
+    <div class="button-container2">
+        <button class="button green" onclick="window.location.href='coupon.html'">เลือกคูปอง</button>
+    </div>
+
+    <div class="container">
+        <label for="coupon">กรอกรหัสคูปอง:</label>
+        <input type="text" id="coupon" placeholder="ใส่รหัสคูปอง" writingsuggestions="true" />
+        <button class="button3 coupon" onclick="applyCoupon()">ใช้คูปอง</button>
+    </div>
+
+
+    <div class="container">
+        <p class="small"><mark>**คูปองแบบเปอร์เซ็นสามารถใช้งานได้ครั้งเดียว**</mark></p>
+    </div>
+
+    <div class="price">
+        <div id="original-price">ราคาอาหาร: 0 บาท</div> <!-- แสดงราคา -->
+        <div id="total-price">ราคาหลังจากใช้คูปอง: 0 บาท</div> <!-- แสดงราคา -->
+        <div id="message"></div> <!-- เพิ่ม message แสดงผลการใช้คูปอง -->
+    </div>
+
+    <hr class="divider">
+
+    <h1>วิธีการจัดส่ง</h1>
+    <div class="container"> <!-- คอนเทนเนอร์หลักสำหรับจัดให้อยู่ตรงกลาง -->
+        <form id="ship-form">
+            <label>
+                <input type="radio" name="ship-method" value="ship1" data-price="0" onclick="updateShippingPrice()">
+                จัดส่งแบบประหยัด (ฟรี) 40-50 นาที
+            </label><br>
+            <label>
+                <input type="radio" name="ship-method" value="ship2" data-price="10" onclick="updateShippingPrice()">
+                จัดส่งแบบปกติ (+10) 30 นาที
+            </label><br>
+            <label>
+                <input type="radio" name="ship-method" value="ship3" data-price="20" onclick="updateShippingPrice()">
+                จัดส่งแบบเร็ว (+20) 10-20 นาที
+            </label><br>
+        </form>
+    </div>
+    <div class="container">
+        <div id="shipping-price">ค่าจัดส่ง: 0 บาท</div>
+    </div>
+    <div class="container">
+        <div id="final-price" style="font-size: 20px; color:#95491d">ราคารวมทั้งหมด: 0 บาท</div>
+    </div>
+
+    <hr class="divider">
+
+
+    <div class="button-container">
+        <button class="button green" onclick="confirmOrder()">ยืนยัน</button>
+        <!-- เปลี่ยนไปเรียกฟังก์ชัน confirmOrder() -->
+        <button id="buttonred" onclick="cancle()">ยกเลิก</button>
+    </div>
+
+    <footer>
+        <p class="footer">Copyright© 2024 khruakhunmae. All rights reserved.</p>
+    </footer>
+
+    <script src="js/list.js"></script>
+</body>
+
+</html>

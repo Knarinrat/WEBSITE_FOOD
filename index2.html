@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>เข้าสู่ระบบสำหรับสมาชิก</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="thai">
+        <div class="marquee">
+            <marquee direction="left">
+                ครัวคุณแม่ อาหารไทยโบราณการันตรีความอร่อยยาวนานกว่า 40 ปี
+            </marquee>
+        </div>
+
+        <div>
+            <form id="form" action="/register" method="POST" autocomplete="off">
+                <h1>สมัครสมาชิก</h1>
+                <div class="input-control">
+                    <label for="email">อีเมล : </label>
+                    <input id="email" name="email" type="text" required>
+
+                </div>
+
+                <div class="input-control">
+                    <label for="name">ชื่อ : </label>
+                    <input id="name" name="name" type="text" required>
+
+                </div>
+
+                <div class="input-control">
+                    <label for="surname">สกุล : </label>
+                    <input id="surname" name="surname" type="text" required>
+
+                </div>
+
+                <div class="input-control">
+                    <label for="telephone">เบอร์โทรศัพท์ : </label>
+                    <input id="telephone" name="telephone" type="text" required>
+
+                </div>
+
+                <div class="input-control">
+                    <label for="address">ที่อยู่: </label>
+                    <input id="address" name="address" type="text" required>
+
+                </div>
+
+                <div class="input-control">
+                    <label for="password">รหัสผ่าน : </label>
+                    <input type="password" id="pws" name="password" required>
+
+                </div>
+
+                <button type="submit" class="button-submit">สมัคร</button>
+                <button type="reset" class="button-cancle" onclick="location.href='index.html';">ยกเลิก</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('สมัครสมาชิกสำเร็จ!');
+                        this.reset();
+                    } else {
+                        throw new Error('เกิดข้อผิดพลาดในการสมัครสมาชิก');
+                    }
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
+        });
+    </script>
+
+</body>
+
+</html>

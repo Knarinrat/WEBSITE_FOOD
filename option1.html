@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Option drink</title>
+    <link rel="stylesheet" href="css/option1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="accountInfo">
+        <img src="profile2.png" alt="logo" class="profile">
+        <a id="userName" href="profile.html"></a>
+    </div>
+    <div class="top">
+        <img src="logo2.jpg" alt="logo img" class="logo">
+        <div class="menu-link">
+            <a href="home.html" class="link"> หน้าแรก </a>
+            <a href="menu.html" class="link"> เมนูอาหาร </a>
+            <a href="coupon2.html" class="link"> โปรโมชั่น </a>
+            <a href="contact.html" class="link"> ติดต่อเรา </a>
+        </div>
+    </div>
+
+    <h2>ตัวเลือกเพิ่มเติม : เครื่องดื่ม</h2>
+    <div class="text-sweet">
+        <label for="sweetness">ระดับความหวาน:</label> <br>
+        <div class="option">
+            <input type="radio" id="sweet1" name="sweetness" value="หวานมาก"> หวานมาก (125%) <br>
+            <input type="radio" id="sweet2" name="sweetness" value="หวานปกติ"> หวานปกติ (100%) <br>
+            <input type="radio" id="sweet3" name="sweetness" value="หวานน้อย"> หวานน้อย (50%) <br>
+            <input type="radio" id="sweet4" name="sweetness" value="หวานน้อยมาก"> หวานน้อยมาก (25%)
+        </div>
+
+        <hr class="separator">
+
+        <div class="option">
+            <label for="toppings">ท็อปปิ้ง:</label> <br>
+            <input type="checkbox" id="topping1" value="ไข่มุก"> ไข่มุก <br>
+            <input type="checkbox" id="topping2" value="พุดดิ้ง"> พุดดิ้ง <br>
+            <input type="checkbox" id="topping3" value="บุกบราวชูก้า"> บุกบราวชูก้า <br>
+            <input type="checkbox" id="topping4" value="ฟรุตสลัด"> ฟรุตสลัด
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button green" id="confirmButton">ยืนยัน</button>
+        <button class="button red" id="cancelButton">ยกเลิก</button>
+    </div>
+
+    <script src="js/option1.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>สั่งอาหาร</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="accountInfo">
+        <img src="profile2.png" alt="logo" class="profile">
+        <a id="userName" href="profile.html"></a>
+    </div>
+    <div class="top">
+        <img src="logo2.jpg" alt="logo img" class="logo">
+        <div class="menu-link">
+            <a href="home.html" class="link"> หน้าแรก </a>
+            <a href="menu.html" class="link"> สั่งอาหาร </a>
+            <a href="coupon2.html" class="link"> โปรโมชั่น </a>
+            <a href="contact.html" class="link"> ติดต่อเรา </a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="bannerhome.jpg" alt="banner img">
+    </div>
+    <div class="body2">
+        <form class="search-form">
+            <input type="text" name="search" placeholder="ค้นหา...">
+            <select name="category" onchange="location = this.value;">
+                <option value="">ประเภท</option>
+                <option value="#snack">อาหารทานเล่น</option>
+                <option value="#main-dish">อาหารจานหลัก</option>
+                <option value="#single-dish">อาหารจานเดียว</option>
+                <option value="#side-dish">เครื่องเคียง</option>
+                <option value="#dessert">ของหวาน</option>
+                <option value="#drinks">เครื่องดื่ม</option>
+            </select>
+            <select name="price-range" id="priceRangeSelect">
+                <option value="">ช่วงราคา</option>
+                <option value="1-100" data-url="menu1.html">1-100 บาท</option>
+                <option value="101-200" data-url="menu2.html">101-200 บาท</option>
+                <option value="201-300" data-url="menu3.html">201-300 บาท</option>
+                <option value="301-400" data-url="menu4.html">301-400 บาท</option>
+            </select>
+        </form>
+
+        <h1 id="snack">อาหารทานเล่น</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="เฟรนฟราย">
+                <img src="menu/appetizer/1.png" alt="appetizer1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">เฟรนฟราย</p>
+                    <p class="price-text">ราคา: 39 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('เฟรนฟราย',39)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="นักเก็ต">
+                <img src="menu/appetizer/2.png" alt="appetizer2" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">นักเก็ต</p>
+                    <p class="price-text">ราคา: 59 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('นักเก็ต',59)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ทอดมันกุ้ง">
+                <img src="menu/appetizer/3.png" alt="appetizer3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ทอดมันกุ้ง</p>
+                    <p class="price-text">ราคา: 100 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ทอดมันกุ้ง',100)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="กุ้งชุบแป้งทอด">
+                <img src="menu/appetizer/4.png" alt="appetizer4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">กุ้งชุบแป้งทอด</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('กุ้งชุบแป้งทอด',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ยำวุ้นเส้น">
+                <img src="menu/appetizer/5.png" alt="appetizer5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ยำวุ้นเส้น</p>
+                    <p class="price-text">ราคา: 70 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ยำวุ้นเส้น',70)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ยำเนื้อย่าง">
+                <img src="menu/appetizer/6.png" alt="appetizer6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ยำเนื้อย่าง</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ยำเนื้อย่าง',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="สาคูไส้หมู">
+                <img src="menu/appetizer/7.png" alt="appetizer7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">สาคูไส้หมู</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('สาคูไส้หมู',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="หมูสะเต๊ะ">
+                <img src="menu/appetizer/8.png" alt="appetizer8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">หมูสะเต๊ะ</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('หมูสะเต๊ะ',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวเกรียบปากหม้อ">
+                <img src="menu/appetizer/9.png" alt="appetizer9" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวเกรียบปากหม้อ</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวเกรียบปากหม้อ',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ขนมปังหน้าหมู">
+                <img src="menu/appetizer/10.png" alt="appetizer10" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ขนมปังหน้าหมู</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ขนมปังหน้าหมู',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="main-dish">อาหารจานหลัก</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="หมูแดดเดียว">
+                <img src="menu/disher/1.png" alt="disher1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">หมูแดดเดียว</p>
+                    <p class="price-text">ราคา: 100 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('หมูแดดเดียว',100)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="แกงเขียวหวานไก่">
+                <img src="menu/disher/3.png" alt="disher3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">แกงเขียวหวานไก่</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('แกงเขียวหวานไก่',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="แกงส้มไข่ชะอมกุ้ง">
+                <img src="menu/disher/4.png" alt="disher4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">แกงส้มไข่ชะอมกุ้ง</p>
+                    <p class="price-text">ราคา: 100 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('แกงส้มไข่ชะอมกุ้ง',100)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="พะแนง">
+                <img src="menu/disher/5.png" alt="disher5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">พะแนง</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('พะแนง',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ต้มข่าไก่">
+                <img src="menu/disher/6.png" alt="disher6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ต้มข่าไก่</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ต้มข่าไก่',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ต้มจืด">
+                <img src="menu/disher/8.png" alt="disher8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ต้มจืด</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ต้มจืด',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="คั่วกลิ้ง">
+                <img src="menu/disher/10.png" alt="disher10" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">คั่วกลิ้ง</p>
+                    <p class="price-text">ราคา: 100 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('คั่วกลิ้ง',100)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="กะหล่ำปลีผัดน้ำปลา">
+                <img src="menu/disher/11.png" alt="disher11" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">กะหล่ำปลีผัดน้ำปลา</p>
+                    <p class="price-text">ราคา: 100 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button"
+                            onclick="addToList('กะหล่ำปลีผัดน้ำปลา',100)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="single-dish">อาหารจานเดียว</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="ข้าวผัดกะเพรา">
+                <img src="menu/main/1.png" alt="main1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวผัดกะเพรา</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวผัดกะเพรา',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวผัด">
+                <img src="menu/main/2.png" alt="main2" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวผัด</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวผัด',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวทอดกระเทียม">
+                <img src="menu/main/3.png" alt="main3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวทอดกระเทียม</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวทอดกระเทียม',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวหมูผัดพริกแกง">
+                <img src="menu/main/4.png" alt="main4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวหมูผัดพริกแกง</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวหมูผัดพริกแกง',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ผัดซีอิ๊ว">
+                <img src="menu/main/5.png" alt="main5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ผัดซีอิ๊ว</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ผัดซีอิ๊ว',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวคั่วพริกเกลือ">
+                <img src="menu/main/6.png" alt="main6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวคั่วพริกเกลือ</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวคั่วพริกเกลือ',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ราดหน้า">
+                <img src="menu/main/7.png" alt="main7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ราดหน้า</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ราดหน้า',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ผัดไทย">
+                <img src="menu/main/8.png" alt="main8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ผัดไทย</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ผัดไทย',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ก๋วยเตี๋ยวคั่วไก่">
+                <img src="menu/main/9.png" alt="main9" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ก๋วยเตี๋ยวคั่วไก่</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ก๋วยเตี๋ยวคั่วไก่',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="สุกี้น้ำ">
+                <img src="menu/main/10.png" alt="main10" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">สุกี้น้ำ</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('สุกี้น้ำ',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="side-dish">เครื่องเคียง</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="หลนเต้าเจี้ยว">
+                <img src="menu/option/1.png" alt="option1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">หลนเต้าเจี้ยว</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('หลนเต้าเจี้ยว',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำพริกลงเรือ">
+                <img src="menu/option/2.png" alt="option2" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำพริกลงเรือ</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำพริกลงเรือ',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำพริกตาแดง">
+                <img src="menu/option/3.png" alt="option3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำพริกตาแดง</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำพริกตาแดง',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำพริกแมงดา">
+                <img src="menu/option/4.png" alt="option4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำพริกแมงดา</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำพริกแมงดา',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ไข่ตุ๋น">
+                <img src="menu/option/5.png" alt="option5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ไข่ตุ๋น</p>
+                    <p class="price-text">ราคา: 20 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ไข่ตุ๋น',20)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ไข่เค็ม">
+                <img src="menu/option/6.png" alt="option6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ไข่เค็ม</p>
+                    <p class="price-text">ราคา: 10 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ไข่เค็ม',10)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ไข่ดาว">
+                <img src="menu/option/7.png" alt="option7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ไข่ดาว</p>
+                    <p class="price-text">ราคา: 10 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ไข่ดาว',10)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ไข่เจียว">
+                <img src="menu/option/8.png" alt="option8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ไข่เจียว</p>
+                    <p class="price-text">ราคา: 15 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ไข่เจียว',15)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ข้าวสวย">
+                <img src="menu/option/9.png" alt="option9" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวสวย</p>
+                    <p class="price-text">ราคา: 10 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวสวย',10)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="dessert">ของหวาน</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="ข้าวเหนียวมะม่วง">
+                <img src="menu/dessert/1.png" alt="dessert1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ข้าวเหนียวมะม่วง</p>
+                    <p class="price-text">ราคา: 80 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ข้าวเหนียวมะม่วง',80)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ลอดช่องน้ำกะทิ">
+                <img src="menu/dessert/2.png" alt="dessert2" class="menu-image">
+                <div class="menu-info" id="ลอดช่องน้ำกะทิ">
+                    <p class="name-text">ลอดช่องน้ำกะทิ</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ลอดช่องน้ำกะทิ',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="บัวลอยมะพร้าวอ่อน">
+                <img src="menu/dessert/3.png" alt="dessert3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">บัวลอยมะพร้าวอ่อน</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('บัวลอยมะพร้าวอ่อน',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="กล้วยบวชชี">
+                <img src="menu/dessert/4.png" alt="dessert4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">กล้วยบวชชี</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('กล้วยบวชชี',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="กล้วยเชื่อมราดน้ำกะทิ">
+                <img src="menu/dessert/5.png" alt="dessert5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">กล้วยเชื่อมราดน้ำกะทิ</p>
+                    <p class="price-text">ราคา: 60 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button"
+                            onclick="addToList('กล้วยเชื่อมราดน้ำกะทิ',60)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ครองแครงกะทิ">
+                <img src="menu/dessert/6.png" alt="dessert6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ครองแครงกะทิ</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ครองแครงกะทิ',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="แกงบวชฟักทอง">
+                <img src="menu/dessert/7.png" alt="dessert7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">แกงบวชฟักทอง</p>
+                    <p class="price-text">ราคา: 50 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('แกงบวชฟักทอง',50)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="เฉาก๊วยชากังราว">
+                <img src="menu/dessert/8.png" alt="dessert8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">เฉาก๊วยชากังราว</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('เฉาก๊วยชากังราว',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำแข็งไส">
+                <img src="menu/dessert/9.png" alt="dessert9" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำแข็งไส (เลือกท็อปปิ้งได้)</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำแข็งไส',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="ไอติมกะทิ">
+                <img src="menu/dessert/10.png" alt="dessert10" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">ไอติมกะทิ</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('ไอติมกะทิ',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="drinks">เครื่องดื่ม</h1>
+        <div class="menu-container">
+            <div class="menu-item" id="น้ำเปล่า">
+                <img src="menu/drink/1.png" alt="drink1" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำเปล่า</p>
+                    <p class="price-text">ราคา: 10 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำเปล่า',10)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำชาเย็น">
+                <img src="menu/drink/2.png" alt="drink2" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำชาเย็น</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำชาเย็น',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำอัดลม">
+                <img src="menu/drink/3.png" alt="drink3" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำอัดลม</p>
+                    <p class="price-text">ราคา: 25 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำอัดลม',25)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำส้ม">
+                <img src="menu/drink/4.png" alt="drink4" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำส้ม</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำส้ม',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำอัญชันมะนาว">
+                <img src="menu/drink/5.png" alt="drink5" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำอัญชันมะนาว</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำอัญชันมะนาว',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำแตงโม">
+                <img src="menu/drink/6.png" alt="drink6" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำแตงโม</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำแตงโม',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำลำไย">
+                <img src="menu/drink/7.png" alt="drink7" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำลำไย</p>
+                    <p class="price-text">ราคา: 40 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำลำไย',40)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำกระเจี๊ยบ">
+                <img src="menu/drink/8.png" alt="drink8" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำกระเจี๊ยบ</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำกระเจี๊ยบ',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำแดงโซดา">
+                <img src="menu/drink/9.png" alt="drink9" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำแดงโซดา</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำแดงโซดา',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" id="น้ำเก๊กฮวย">
+                <img src="menu/drink/10.png" alt="drink10" class="menu-image">
+                <div class="menu-info">
+                    <p class="name-text">น้ำเก๊กฮวย</p>
+                    <p class="price-text">ราคา: 30 บาท</p>
+                    <div class="button-container2">
+                        <button class="button add-button" onclick="addToList('น้ำเก๊กฮวย',30)"><b>+</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button green" onclick="window.location.href='list.html'">ยืนยัน</button>
+            <button class="button red">ยกเลิก</button>
+        </div>
+
+        <button id="scrollToTopButton" class="scroll-button">ขึ้นไปด้านบน</button>
+    </div>
+
+    <footer>
+        <p class="footer">Copyright© 2024 khruakhunmae. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
